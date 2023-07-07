@@ -10,7 +10,8 @@ router.get('/project/:id',userController.projects);
 router.post('/create-issue',userController.createIssue);
 
 router.get('/:id',userController.showAllIssue);
-
+ 
+router.post('/getIssue',userController.getIssue)
 
 
 

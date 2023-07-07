@@ -36,6 +36,7 @@ module.exports.projects = async function(req,res){
         console.log(err);
         return res.redirect('back');
       }
+
     };
 
     module.exports.createIssue = function(req,res){
@@ -79,3 +80,29 @@ module.exports.projects = async function(req,res){
          }
 
     }
+
+
+    // getting issue
+
+    module.exports.getIssue = async function(req,res){
+
+      console.log(req.body.title);
+
+      try {
+        let project = await Issue.find({title:req.body.title,description:req.body.Description});
+
+        if (project) {
+          console.log(project)
+          return res.render('showIssue', {
+            title: 'Show All Issue',
+            project,
+          });
+        }
+        return res.redirect('back');
+       }
+       catch(err){
+        console.log(err);
+      return res.redirect('back');
+       }
+
+  }
