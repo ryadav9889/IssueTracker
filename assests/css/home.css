@@ -1,3 +1,4 @@
+/* style for button  */
 #btn{
      /* background-color: aquamarine; */
     font-size: larger;
@@ -5,6 +6,7 @@
     border-radius: 4px;
     padding: 10px 15px;
 }
+/*  style for whole body */
 body{
     background-color: rgb(175, 230, 230);
     display: flex;
@@ -13,10 +15,12 @@ body{
     align-items: center;
 }
 
+/* hovering */
 #btn:hover{
     background-color: rgb(255, 115, 0);
 }
 
+/* styling the fiv element whose name is .popup(to show popup message) */
 .popup{
     background-color: rgba(0,0,0,0);
     width: 100%;
@@ -27,7 +31,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 .pop-content{
 
     height: auto;
@@ -42,18 +45,19 @@ body{
     
 
 }
+/* //////////////////////////////////===============////////////////////// */
 
 .col{
     display: flex;
     flex-direction: column;
     /* margin: ; */
 }
-
+/* --------submit button---------- */
 #btnSubmit{
     margin: 5px;
     background-color: blueviolet;
 }
-
+/* ====== arrangement of div element using flex=========  */
 .row{
     width: 500px;
     margin-top: 50px;
@@ -66,6 +70,8 @@ body{
     /* align-items: center; */
 }
 
+
+/* ======== list of information of project ======= */
 .list{
 
     /* margin: 10px; */

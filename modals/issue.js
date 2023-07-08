@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// creating issue scchema
 const issueSchema = new mongoose.Schema(
   {
     title: {
@@ -34,6 +35,7 @@ const issueSchema = new mongoose.Schema(
   }
 );
 
+// creating modal
 const Issue = mongoose.model('Issue', issueSchema);
 
 module.exports = Issue;

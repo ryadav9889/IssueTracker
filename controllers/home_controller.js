@@ -1,8 +1,9 @@
-
+// importing project schema
 const projectCreator = require('../modals/projectCreator')
 
 // console.log(projectCreator);
 
+// home controller
 module.exports.home = async function(req,res){
     try {
         let projects = await projectCreator.find({}).sort('-createdAt');
@@ -15,3 +16,4 @@ module.exports.home = async function(req,res){
         return;
       }
     };
+    // /----------------------///

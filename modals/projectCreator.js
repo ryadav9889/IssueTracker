@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// creating project schema
 const projectSchema = new mongoose.Schema({
     name:{
         type: String,
@@ -14,7 +15,7 @@ const projectSchema = new mongoose.Schema({
         required: true
     }
 })
-
+// modal
 const User = mongoose.model('ProjectCreator', projectSchema);
 
 

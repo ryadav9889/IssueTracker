@@ -1,14 +1,16 @@
+/* to arrange item using flex  (column wise)*/
 .col{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
-
+/*   to arrange item using flex  (row wise)*/
 .row{
     display: flex;
     flex-direction: row;
 }
+/* selecting span under .col class */
 .col span  {
     font-size:medium;
     font-weight: bold;
@@ -16,6 +18,7 @@
     color: blue;
     
 }
+/* selecting div tag */
 
 .div{
     background-color: rgba(111, 230, 210, 0.5);
@@ -30,7 +33,7 @@
     box-shadow: 4px 4px rgb(216, 135, 237);
 
 }
-
+/* heading  */
 h1{
     margin-left: 42%;
     border: 3px solid red;
@@ -38,12 +41,12 @@ h1{
     width: 140px;
     padding: 4px;
 }
-
+/* selecting values */
 #data{
     color: chocolate;
     font-weight: 200;
 }
-
+/* home button */
 #home{
     width: 200px;
     /* background-color: rgb(92, 89, 89); */

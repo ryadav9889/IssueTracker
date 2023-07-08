@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====== linking css files======== -->
     <link rel="stylesheet" href="/css/home.css">
+    <!-- title -->
     <title>Home Page</title>
 </head>
 <body>
 
+     <!-- heading -->
     <h1 >Issue Tracker</h1>
 
-    <!-- <button id="btn" onclick="">Add project</button> -->
-    <a href="#" id="btn">Add Project</a>   
-
+    
+    <!-- ===== button to add project========= -->
+    <a href="#" id="btn">Add Project</a>  
+    
+    
+<!-- =====================main div for popup========================= -->
     <div class="popup">
         <div class="pop-content">
+          <!-- form to get info to add new project -->
           <form action="/users/create-project" method="post" class="col">
             <label for="name">Name</label>
             <input type="text" name="name">
@@ -29,8 +36,9 @@
 
         </div>
     </div>
+    <!-- ================================================ -->
 
-          
+          <!-- =================== showing list  of project================ -->
     <div class="col ">
       <!-- <% for( let project of projects ) { %> -->
       
@@ -55,10 +63,10 @@
       <!-- <% } %> -->
     </div>
 
-       
-     
-
+    <!-- ========================== End ======================================= -->
 </body>
-
+<!-- end of body -->
+<!-- ----- linking script file---------- -->
 <script src="/js/script.js"></script>
+<!-- ---------------------------------- -->
 </html>

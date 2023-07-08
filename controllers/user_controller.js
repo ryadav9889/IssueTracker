@@ -1,9 +1,9 @@
-
+// ---------modals---------------//
 const Creator = require('../modals/projectCreator');
 const Issue = require('../modals/issue');
 
 
-// adding new project
+// ==========================adding new project-=========================//
 module.exports.createProject = function(req,res){
     // console.log(req.body.name);
 
@@ -18,8 +18,11 @@ module.exports.createProject = function(req,res){
     return res.redirect('back');
 }
 
+// ====================================================//
 
-// showing particular project page
+
+// ======================showing particular project page=========================//
+
 module.exports.projects = async function(req,res){
     // console.log(req.params.id);
 
@@ -38,7 +41,9 @@ module.exports.projects = async function(req,res){
       }
 
     };
+    // =====================================================//
 
+  //  ==================controller to create issue============================///
     module.exports.createIssue = function(req,res){
       console.log(req.body.Title);
 
@@ -56,8 +61,10 @@ module.exports.projects = async function(req,res){
   return res.redirect('back');
 
     }
-       
+      //  =================================================//
 
+
+// ========= contoller to show all issue =====================//
     module.exports.showAllIssue = async function(req,res){
       
          console.log(req.params.id);
@@ -80,9 +87,9 @@ module.exports.projects = async function(req,res){
          }
 
     }
+// //================================================///
 
-
-    // getting issue
+    // getting issue========================================
 
     module.exports.getIssue = async function(req,res){
 
@@ -106,3 +113,26 @@ module.exports.projects = async function(req,res){
        }
 
   }
+  // ===========================================================//
+
+// ================================filter======================//
+  module.exports.filter = async function(req,res){
+
+    try {
+      let project = await Issue.find({labels:req.body.label,author:req.body.author});
+
+      if (project) {
+        console.log(project)
+        return res.render('showIssue', {
+          title: 'Show All Issue',
+          project,
+        });
+      }
+      return res.redirect('back');
+     }
+     catch(err){
+      console.log(err);
+    return res.redirect('back');
+     }
+  }
+  // =================================================================//

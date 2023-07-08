@@ -1,14 +1,18 @@
+// import express 
 const express = require('express');
 const app = express();
+// path of current file
 const path = require('path');
+// port address
 const port = 8000;
+// importing mongoose
 const db = require("./config/mongoose");
 const { log } = require('console');
 
 
 
 
-
+// middleware for parsing incoming requests 
 app.use(express.urlencoded());
 
 app.use(express.static(path.join(__dirname,'assests')))
