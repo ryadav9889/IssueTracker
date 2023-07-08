@@ -1,4 +1,4 @@
-![Screenshot (89)](https://github.com/ryadav9889/IssueTracker/assets/132001586/7be1c2e9-9599-43b2-bb2b-9332860c9025)# IssueTracker
+# IssueTracker
 **An issue tracking system is a computer software package that manages and maintains lists of issues.**
 **It contains three page.**
 **>> first page contains -- all project information and button to add project.**
