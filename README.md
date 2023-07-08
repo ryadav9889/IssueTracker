@@ -12,7 +12,7 @@
 # Add Project
 ![Screenshot (87)](https://github.com/ryadav9889/IssueTracker/assets/132001586/0b08c577-6d59-45e3-8805-0dc0513ea671)
 
-# Project Infoformation
+# Project Infoformation and do filter issue by label,title 
 ![Screenshot (88)](https://github.com/ryadav9889/IssueTracker/assets/132001586/7e907002-9efc-4dfd-8a94-845ee8d02f9f)
 
 # create Issue
