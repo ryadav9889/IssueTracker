@@ -32,7 +32,11 @@ app.set('views', './views');
 app.listen(8000,function(err){
     if(err){
         console.log("error in running server");
+<<<<<<< HEAD
         console.log("test2")
+=======
+        console.log("test1");
+>>>>>>> 076d8cee73cff543ed8148f6ab332f65e64331e9
         // console.log(path);
     }
     else{
