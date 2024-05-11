@@ -32,6 +32,7 @@ app.set('views', './views');
 app.listen(8000,function(err){
     if(err){
         console.log("error in running server");
+        console.log("test2")
         // console.log(path);
     }
     else{
